@@ -1,0 +1,86 @@
+
+{
+    "message": "恭喜您,操作成功",
+    "data": [
+        {
+            "areaId": 1,
+            "name": "安徽省",
+            "cityList": [
+                {
+                    "areaId": 2,
+                    "countList": [
+                        {
+                            "areaId": 3,
+                            "name": "市辖区"
+                        },
+                        {
+                            "areaId": 5,
+                            "name": "庐阳区"
+                        },
+                        {
+                            "areaId": 6,
+                            "name": "蜀山区"
+                        },
+                        {
+                            "areaId": 7,
+                            "name": "包河区"
+                        },
+                        {
+                            "areaId": 8,
+                            "name": "长丰县"
+                        },
+                        {
+                            "areaId": 9,
+                            "name": "肥东县"
+                        },
+                        {
+                            "areaId": 10,
+                            "name": "肥西县"
+                        },
+                        {
+                            "areaId": 14,
+                            "name": "瑶海区"
+                        }
+                    ],
+                    "name": "合肥市"
+                },
+                {
+                    "areaId": 12,
+                    "countList": [
+                        {
+                            "areaId": 13,
+                            "name": "金安区"
+                        },
+                        {
+                            "areaId": 15,
+                            "name": "裕安区"
+                        },
+                        {
+                            "areaId": 16,
+                            "name": "霍山县"
+                        },
+                        {
+                            "areaId": 17,
+                            "name": "舒城县"
+                        },
+                        {
+                            "areaId": 18,
+                            "name": "金寨县"
+                        },
+                        {
+                            "areaId": 19,
+                            "name": "霍邱县"
+                        },
+                        {
+                            "areaId": 20,
+                            "name": "叶集区"
+                        }
+                    ],
+                    "name": "六安市"
+                }
+            ]
+        }
+    ],
+    "result": 1,
+    "isaes": 0
+}
