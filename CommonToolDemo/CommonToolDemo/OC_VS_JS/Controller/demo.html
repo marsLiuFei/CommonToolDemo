@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>iOS and Js</title>
+        <style type="text/css">
+            * {
+                font-size: 40px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        
+        <div style="margin-top: 100px">
+            <br/>
+            <div><input type="button" value="不带参" onclick="buttomA()"></div>
+            <br/>
+            <div><input type="button" value="带参" onclick="buttomB()"></div><br/>
+        </div>
+
+        <div id="SwiftDiv">
+            <span id="jsParamFuncSpan" style="color: red; font-size: 50px;"></span>
+        </div>
+        
+        <script type="text/javascript">
+            function buttomA() {
+                window.webkit.messageHandlers.showSendMsg.postMessage(null);
+            }
+        
+            function buttomB() {
+                window.webkit.messageHandlers.showParameterMsg.postMessage(['参数One', '参数Two']);
+            }
+        
+            function getJsValue() {
+                return "js中传递出来的分享内容";
+            }
+        
+        
+        </script>
+    </body>
+</html>

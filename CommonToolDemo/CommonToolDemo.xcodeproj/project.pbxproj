@@ -29,6 +29,10 @@
 		04A20517218D3C9F004BE9A3 /* LFUIWebViewShowHtmlCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A20516218D3C9F004BE9A3 /* LFUIWebViewShowHtmlCell.m */; };
 		04A20519218D404D004BE9A3 /* html in Resources */ = {isa = PBXBuildFile; fileRef = 04A20518218D404D004BE9A3 /* html */; };
 		04A2051C218D4753004BE9A3 /* LFWKWebViewShowHtmlCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A2051B218D4753004BE9A3 /* LFWKWebViewShowHtmlCell.m */; };
+		04A20522218D725F004BE9A3 /* LFOC_VS_JSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A20521218D725F004BE9A3 /* LFOC_VS_JSViewController.m */; };
+		04A20524218D7325004BE9A3 /* demo.html in Resources */ = {isa = PBXBuildFile; fileRef = 04A20523218D7324004BE9A3 /* demo.html */; };
+		04A20527218D7374004BE9A3 /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A20526218D7374004BE9A3 /* WKWebViewController.m */; };
+		04A2052A218D7C7D004BE9A3 /* LFUIWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A20529218D7C7D004BE9A3 /* LFUIWebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +76,13 @@
 		04A20518218D404D004BE9A3 /* html */ = {isa = PBXFileReference; lastKnownFileType = text; path = html; sourceTree = "<group>"; };
 		04A2051A218D4753004BE9A3 /* LFWKWebViewShowHtmlCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFWKWebViewShowHtmlCell.h; sourceTree = "<group>"; };
 		04A2051B218D4753004BE9A3 /* LFWKWebViewShowHtmlCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFWKWebViewShowHtmlCell.m; sourceTree = "<group>"; };
+		04A20520218D725F004BE9A3 /* LFOC_VS_JSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFOC_VS_JSViewController.h; sourceTree = "<group>"; };
+		04A20521218D725F004BE9A3 /* LFOC_VS_JSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFOC_VS_JSViewController.m; sourceTree = "<group>"; };
+		04A20523218D7324004BE9A3 /* demo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = demo.html; sourceTree = "<group>"; };
+		04A20525218D7374004BE9A3 /* WKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewController.h; sourceTree = "<group>"; };
+		04A20526218D7374004BE9A3 /* WKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewController.m; sourceTree = "<group>"; };
+		04A20528218D7C7D004BE9A3 /* LFUIWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFUIWebViewController.h; sourceTree = "<group>"; };
+		04A20529218D7C7D004BE9A3 /* LFUIWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFUIWebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +115,7 @@
 		048F635B218BF6A200773500 /* CommonToolDemo */ = {
 			isa = PBXGroup;
 			children = (
+				04A2051D218D6ACD004BE9A3 /* OC_VS_JS */,
 				04A20508218D3B01004BE9A3 /* cellShowHtml */,
 				048F6372218C00E200773500 /* AlertView */,
 				048F635C218BF6A200773500 /* AppDelegate.h */,
@@ -243,6 +255,36 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		04A2051D218D6ACD004BE9A3 /* OC_VS_JS */ = {
+			isa = PBXGroup;
+			children = (
+				04A2051E218D6ACD004BE9A3 /* Controller */,
+				04A2051F218D6ACD004BE9A3 /* View */,
+			);
+			path = OC_VS_JS;
+			sourceTree = "<group>";
+		};
+		04A2051E218D6ACD004BE9A3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04A20523218D7324004BE9A3 /* demo.html */,
+				04A20520218D725F004BE9A3 /* LFOC_VS_JSViewController.h */,
+				04A20521218D725F004BE9A3 /* LFOC_VS_JSViewController.m */,
+				04A20525218D7374004BE9A3 /* WKWebViewController.h */,
+				04A20526218D7374004BE9A3 /* WKWebViewController.m */,
+				04A20528218D7C7D004BE9A3 /* LFUIWebViewController.h */,
+				04A20529218D7C7D004BE9A3 /* LFUIWebViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04A2051F218D6ACD004BE9A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -302,6 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				048F6369218BF6A400773500 /* LaunchScreen.storyboard in Resources */,
+				04A20524218D7325004BE9A3 /* demo.html in Resources */,
 				048F6366218BF6A400773500 /* Assets.xcassets in Resources */,
 				04A204FA218D28F0004BE9A3 /* area.json in Resources */,
 				048F6364218BF6A200773500 /* Main.storyboard in Resources */,
@@ -327,11 +370,14 @@
 				04A204F8218D2424004BE9A3 /* LFTwoLinePickView.m in Sources */,
 				048F635E218BF6A200773500 /* AppDelegate.m in Sources */,
 				04A20500218D29C0004BE9A3 /* LFCityModel.m in Sources */,
+				04A2052A218D7C7D004BE9A3 /* LFUIWebViewController.m in Sources */,
 				04A20511218D3BEF004BE9A3 /* LFUIWebViewShowViewController.m in Sources */,
 				04A204FD218D29B1004BE9A3 /* LFProvenceModel.m in Sources */,
 				04A20507218D3549004BE9A3 /* LFDatePickView.m in Sources */,
 				048F6377218C010C00773500 /* LFAlertViewController.m in Sources */,
+				04A20527218D7374004BE9A3 /* WKWebViewController.m in Sources */,
 				048F6387218C1E2D00773500 /* LFOneLinePickView.m in Sources */,
+				04A20522218D725F004BE9A3 /* LFOC_VS_JSViewController.m in Sources */,
 				04A20514218D3C07004BE9A3 /* LFWKWebViewShowViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
