@@ -1,34 +1,35 @@
 //
-//  ViewController.m
+//  LFAlertViewController.m
 //  CommonToolDemo
 //
 //  Created by 刘飞 on 2018/11/2.
 //  Copyright © 2018年 ahxb. All rights reserved.
 //
 
-#import "ViewController.h"
-#import "LFAlertViewController.h"
 #import "LFCellShowHtmlViewController.h"
-
-@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
-@property(nonatomic, strong)UITableView *tableView;
-@property(nonatomic, copy)NSArray *titles;
-@end
+#import "LFUIWebViewShowViewController.h"
+#import "LFWKWebViewShowViewController.h"
 
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
 #define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
 #define NAV_HEIGHT [[UIApplication sharedApplication] statusBarFrame].size.height + self.navigationController.navigationBar.frame.size.height
 
+@interface LFCellShowHtmlViewController ()<UITableViewDelegate,UITableViewDataSource>
+@property(nonatomic, strong)UITableView *tableView;
+@property(nonatomic, copy)NSArray *titles;
+@end
 
-@implementation ViewController
+@implementation LFCellShowHtmlViewController
 -(NSArray *)titles{
     if (!_titles) {
-        _titles = @[@"弹出框控件",@"cell加载网页"];
+        _titles = @[@"Cell中UIWebView显示html",@"Cell中WKWebView显示html"];
     }
     return _titles;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.navigationItem.title = @"Cell中加载Html文本";
     [self initTableView];
 }
 - (void )initTableView{
@@ -41,7 +42,6 @@
     _tableView.dataSource = self;
     [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell1"];
     [self.view addSubview:_tableView];
-
 }
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
@@ -56,24 +56,23 @@
     return 0.001;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 50;
+    return 60;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell1"];
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     cell.textLabel.text = self.titles[indexPath.row];
     return cell;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if (indexPath.row==0) {
-        LFAlertViewController *vc = [LFAlertViewController new];
+        LFUIWebViewShowViewController *vc = [LFUIWebViewShowViewController new];
         [self.navigationController pushViewController:vc animated:YES];
-    }
-    else if (indexPath.row==1){
-        LFCellShowHtmlViewController *vc = [LFCellShowHtmlViewController new];
+    }else{
+        LFWKWebViewShowViewController *vc = [LFWKWebViewShowViewController new];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }
+
 
 @end
