@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		046791CE2195177500461DD7 /* UIWebView+DKProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 046791CB2195177500461DD7 /* UIWebView+DKProgress.m */; };
+		046791CF2195177500461DD7 /* DKProgressLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 046791CD2195177500461DD7 /* DKProgressLayer.m */; };
+		046791D52195180700461DD7 /* LFUIWebViewProgressController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046791D42195180700461DD7 /* LFUIWebViewProgressController.m */; };
+		046791D92195194700461DD7 /* LFWkWebViewProgressController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046791D82195194700461DD7 /* LFWkWebViewProgressController.m */; };
+		046791DC21951A9D00461DD7 /* LFLoadWebProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046791DB21951A9D00461DD7 /* LFLoadWebProgressViewController.m */; };
 		048F635E218BF6A200773500 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 048F635D218BF6A200773500 /* AppDelegate.m */; };
 		048F6361218BF6A200773500 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048F6360218BF6A200773500 /* ViewController.m */; };
 		048F6364218BF6A200773500 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048F6362218BF6A200773500 /* Main.storyboard */; };
@@ -36,6 +41,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		046791CA2195177500461DD7 /* UIWebView+DKProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+DKProgress.h"; sourceTree = "<group>"; };
+		046791CB2195177500461DD7 /* UIWebView+DKProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+DKProgress.m"; sourceTree = "<group>"; };
+		046791CC2195177500461DD7 /* DKProgressLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKProgressLayer.h; sourceTree = "<group>"; };
+		046791CD2195177500461DD7 /* DKProgressLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKProgressLayer.m; sourceTree = "<group>"; };
+		046791D32195180700461DD7 /* LFUIWebViewProgressController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFUIWebViewProgressController.h; sourceTree = "<group>"; };
+		046791D42195180700461DD7 /* LFUIWebViewProgressController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFUIWebViewProgressController.m; sourceTree = "<group>"; };
+		046791D72195194700461DD7 /* LFWkWebViewProgressController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFWkWebViewProgressController.h; sourceTree = "<group>"; };
+		046791D82195194700461DD7 /* LFWkWebViewProgressController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFWkWebViewProgressController.m; sourceTree = "<group>"; };
+		046791DA21951A9D00461DD7 /* LFLoadWebProgressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFLoadWebProgressViewController.h; sourceTree = "<group>"; };
+		046791DB21951A9D00461DD7 /* LFLoadWebProgressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFLoadWebProgressViewController.m; sourceTree = "<group>"; };
 		048F6359218BF6A200773500 /* CommonToolDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommonToolDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		048F635C218BF6A200773500 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		048F635D218BF6A200773500 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -96,6 +111,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		046791C82195170000461DD7 /* WebViewProgress */ = {
+			isa = PBXGroup;
+			children = (
+				046791D62195192000461DD7 /* WkWebViewProgress */,
+				046791C92195175D00461DD7 /* UIWebVIewProgress */,
+				046791DA21951A9D00461DD7 /* LFLoadWebProgressViewController.h */,
+				046791DB21951A9D00461DD7 /* LFLoadWebProgressViewController.m */,
+			);
+			path = WebViewProgress;
+			sourceTree = "<group>";
+		};
+		046791C92195175D00461DD7 /* UIWebVIewProgress */ = {
+			isa = PBXGroup;
+			children = (
+				046791CC2195177500461DD7 /* DKProgressLayer.h */,
+				046791CD2195177500461DD7 /* DKProgressLayer.m */,
+				046791CA2195177500461DD7 /* UIWebView+DKProgress.h */,
+				046791CB2195177500461DD7 /* UIWebView+DKProgress.m */,
+				046791D32195180700461DD7 /* LFUIWebViewProgressController.h */,
+				046791D42195180700461DD7 /* LFUIWebViewProgressController.m */,
+			);
+			path = UIWebVIewProgress;
+			sourceTree = "<group>";
+		};
+		046791D62195192000461DD7 /* WkWebViewProgress */ = {
+			isa = PBXGroup;
+			children = (
+				046791D72195194700461DD7 /* LFWkWebViewProgressController.h */,
+				046791D82195194700461DD7 /* LFWkWebViewProgressController.m */,
+			);
+			path = WkWebViewProgress;
+			sourceTree = "<group>";
+		};
 		048F6350218BF6A200773500 = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +163,7 @@
 		048F635B218BF6A200773500 /* CommonToolDemo */ = {
 			isa = PBXGroup;
 			children = (
+				046791C82195170000461DD7 /* WebViewProgress */,
 				04A2051D218D6ACD004BE9A3 /* OC_VS_JS */,
 				04A20508218D3B01004BE9A3 /* cellShowHtml */,
 				048F6372218C00E200773500 /* AlertView */,
@@ -359,11 +408,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				046791CE2195177500461DD7 /* UIWebView+DKProgress.m in Sources */,
 				048F6382218C1A2300773500 /* LFBottomAlertView.m in Sources */,
 				048F637E218C19C700773500 /* LFCenterAlertView.m in Sources */,
 				048F6361218BF6A200773500 /* ViewController.m in Sources */,
 				04A20517218D3C9F004BE9A3 /* LFUIWebViewShowHtmlCell.m in Sources */,
+				046791CF2195177500461DD7 /* DKProgressLayer.m in Sources */,
 				04A2051C218D4753004BE9A3 /* LFWKWebViewShowHtmlCell.m in Sources */,
+				046791D52195180700461DD7 /* LFUIWebViewProgressController.m in Sources */,
+				046791D92195194700461DD7 /* LFWkWebViewProgressController.m in Sources */,
 				04A20503218D3139004BE9A3 /* LFCountyModel.m in Sources */,
 				048F636C218BF6A400773500 /* main.m in Sources */,
 				04A2050E218D3B3C004BE9A3 /* LFCellShowHtmlViewController.m in Sources */,
@@ -372,6 +425,7 @@
 				04A20500218D29C0004BE9A3 /* LFCityModel.m in Sources */,
 				04A2052A218D7C7D004BE9A3 /* LFUIWebViewController.m in Sources */,
 				04A20511218D3BEF004BE9A3 /* LFUIWebViewShowViewController.m in Sources */,
+				046791DC21951A9D00461DD7 /* LFLoadWebProgressViewController.m in Sources */,
 				04A204FD218D29B1004BE9A3 /* LFProvenceModel.m in Sources */,
 				04A20507218D3549004BE9A3 /* LFDatePickView.m in Sources */,
 				048F6377218C010C00773500 /* LFAlertViewController.m in Sources */,

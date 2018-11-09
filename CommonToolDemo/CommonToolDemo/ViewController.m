@@ -10,6 +10,7 @@
 #import "LFAlertViewController.h"
 #import "LFCellShowHtmlViewController.h"
 #import "LFOC_VS_JSViewController.h"
+#import "LFLoadWebProgressViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic, strong)UITableView *tableView;
@@ -24,7 +25,7 @@
 @implementation ViewController
 -(NSArray *)titles{
     if (!_titles) {
-        _titles = @[@"弹出框控件",@"cell加载html文本",@"OC与JS交互"];
+        _titles = @[@"弹出框控件",@"cell加载html文本",@"OC与JS交互",@"显示网页加载进度"];
     }
     return _titles;
 }
@@ -77,6 +78,10 @@
     }
     else if (indexPath.row==2){
         LFOC_VS_JSViewController *vc = [LFOC_VS_JSViewController new];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    else if(indexPath.row==3){
+        LFLoadWebProgressViewController *vc = [LFLoadWebProgressViewController new];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }
