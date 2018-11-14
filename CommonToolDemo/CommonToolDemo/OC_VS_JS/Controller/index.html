@@ -1,0 +1,45 @@
+<html>
+    
+    <!--描述网页信息-->
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>html文本</title>
+        <style>
+            .btn{height:40px; width:60%; padding: 0px 30px; background-color: #0071E7; border: solid 1px #0071E7; border-radius:5px; font-size: 1.2em; color: white}
+            </style>
+        
+        <script>
+            
+            //提供给OC调用JS的方法列表
+
+            function alertMessage(msg) {
+                alert('OC调用JS ' + msg )
+            }
+            function getShareUrl() {
+                return "js中传递出来的分享内容";
+            }
+           
+        
+            //OC定义的方法供JS调用
+            function testMethod() {
+                
+            }
+        
+        
+            </script>
+    </head>
+    
+    <!--网页具体内容-->
+    <body>
+        <br/><br/>
+        <div>
+            <label>html文本信息</label>
+        </div>
+        <br/><br/>
+
+        
+        <div>
+            <button class="btn" type="button" onclick="testMethod()">js调用OC</button>
+        </div>
+    </body>
+</html>

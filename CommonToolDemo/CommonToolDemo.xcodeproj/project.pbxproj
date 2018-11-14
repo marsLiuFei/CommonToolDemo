@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		043EC15C219C1BBD0097AEA6 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 043EC15B219C1BBD0097AEA6 /* index.html */; };
 		046791CE2195177500461DD7 /* UIWebView+DKProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 046791CB2195177500461DD7 /* UIWebView+DKProgress.m */; };
 		046791CF2195177500461DD7 /* DKProgressLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 046791CD2195177500461DD7 /* DKProgressLayer.m */; };
 		046791D52195180700461DD7 /* LFUIWebViewProgressController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046791D42195180700461DD7 /* LFUIWebViewProgressController.m */; };
@@ -41,6 +42,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		043EC15B219C1BBD0097AEA6 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		046791CA2195177500461DD7 /* UIWebView+DKProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+DKProgress.h"; sourceTree = "<group>"; };
 		046791CB2195177500461DD7 /* UIWebView+DKProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+DKProgress.m"; sourceTree = "<group>"; };
 		046791CC2195177500461DD7 /* DKProgressLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKProgressLayer.h; sourceTree = "<group>"; };
@@ -317,6 +319,7 @@
 			isa = PBXGroup;
 			children = (
 				04A20523218D7324004BE9A3 /* demo.html */,
+				043EC15B219C1BBD0097AEA6 /* index.html */,
 				04A20520218D725F004BE9A3 /* LFOC_VS_JSViewController.h */,
 				04A20521218D725F004BE9A3 /* LFOC_VS_JSViewController.m */,
 				04A20525218D7374004BE9A3 /* WKWebViewController.h */,
@@ -392,6 +395,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				043EC15C219C1BBD0097AEA6 /* index.html in Resources */,
 				048F6369218BF6A400773500 /* LaunchScreen.storyboard in Resources */,
 				04A20524218D7325004BE9A3 /* demo.html in Resources */,
 				048F6366218BF6A400773500 /* Assets.xcassets in Resources */,
