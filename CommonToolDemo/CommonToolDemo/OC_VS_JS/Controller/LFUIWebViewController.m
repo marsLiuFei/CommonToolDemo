@@ -35,8 +35,8 @@
 }
 - (void )clickRightBtn{
     // 还可以直接调用js定义的方法
-    // 比如getShareUrl()为js端定义好的方法，返回值为分享的url
-    // 我们就可以通过调用这个方法在returnStr中拿到js返回的分享地址
+    // 比如getShareUrl()为js端定义好的方法，返回值为分享的内容
+    // 我们就可以通过调用这个方法在returnStr中拿到js返回的分享内容
     NSString *returnStr = [self.webView stringByEvaluatingJavaScriptFromString:@"getShareUrl()"];
     NSLog(@"%@",returnStr);
     UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"" message:returnStr delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:nil, nil];
@@ -66,20 +66,33 @@
 }
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
-
-    // 可以定义供js调用的方法, testMethod为js调用的方法名
+    //获取页面title：
+    NSString *title = [webView stringByEvaluatingJavaScriptFromString:@"document.title"];
+    NSLog(@"webViewTitle --- %@",title);
+    
+    
+    //获取js上下文
     JSContext *context = [webView valueForKeyPath:@"documentView.webView.mainFrame.javaScriptContext"];
+    //js中调用 testMethod 方法 通过block调用OC的方法
     context[@"testMethod"] = ^() {
-        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"" message:@"js调用OC方法" delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:nil, nil];
-        [alert show];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"" message:@"js调用OC方法" delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:nil, nil];
+            [alert show];
+        });
     };
     
     
     context[@"getMessage"] = ^() {
         NSArray *arguments = [JSContext currentArguments];
+        NSString *content = @"";
         for (JSValue *jsValue in arguments) {
             NSLog(@"=======%@",jsValue);
+            content = [NSString stringWithFormat:@"%@%@",content,jsValue];
         }
+        dispatch_async(dispatch_get_main_queue(), ^{
+            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"js传递出来的内容" message:content delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:nil, nil];
+            [alert show];
+        });
     };
     
 }

@@ -35,6 +35,12 @@
     }
     return _progresslayer;
 }
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    //避免引起循环引用，导致控制器无法被释
+    [self.wkwebView.configuration.userContentController removeScriptMessageHandlerForName:@"showSendMsg"];
+    [self.wkwebView.configuration.userContentController removeScriptMessageHandlerForName:@"showParameterMsg"];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"WKWebView";

@@ -1,32 +1,25 @@
 <html>
-    
-    <!--描述网页信息-->
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>html文本</title>
         <style>
             .btn{height:40px; width:60%; padding: 0px 30px; background-color: #0071E7; border: solid 1px #0071E7; border-radius:5px; font-size: 1.2em; color: white}
             </style>
-        
         <script>
-            
             //提供给OC调用JS的方法列表
-
             function alertMessage(msg) {
                 alert('OC调用JS ' + msg )
             }
             function getShareUrl() {
                 return "js中传递出来的分享内容";
             }
-           
-        
             //OC定义的方法供JS调用
             function testMethod() {
                 
             }
             function testMethod1() {
                 //传递的信息
-                var jsonStr = '{"id":"666", "message":"我是传递的数据"}';
+                var jsonStr = '{"title":"将传给OC的内容", "content":"我是传递的数据"}';
                 getMessage(jsonStr);
             }
             function getMessage(json){
@@ -34,8 +27,6 @@
             }
             </script>
     </head>
-    
-    <!--网页具体内容-->
     <body>
         <br/><br/>
         <div>
