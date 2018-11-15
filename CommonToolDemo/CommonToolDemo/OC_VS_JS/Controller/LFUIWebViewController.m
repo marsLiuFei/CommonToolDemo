@@ -70,11 +70,18 @@
     // 可以定义供js调用的方法, testMethod为js调用的方法名
     JSContext *context = [webView valueForKeyPath:@"documentView.webView.mainFrame.javaScriptContext"];
     context[@"testMethod"] = ^() {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"" message:@"js调用OC方法" delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:nil, nil];
-            [alert show];
-        });
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"" message:@"js调用OC方法" delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:nil, nil];
+        [alert show];
     };
+    
+    
+    context[@"getMessage"] = ^() {
+        NSArray *arguments = [JSContext currentArguments];
+        for (JSValue *jsValue in arguments) {
+            NSLog(@"=======%@",jsValue);
+        }
+    };
+    
 }
 
 

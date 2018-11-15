@@ -24,8 +24,14 @@
             function testMethod() {
                 
             }
-        
-        
+            function testMethod1() {
+                //传递的信息
+                var jsonStr = '{"id":"666", "message":"我是传递的数据"}';
+                getMessage(jsonStr);
+            }
+            function getMessage(json){
+                //空方法
+            }
             </script>
     </head>
     
@@ -37,7 +43,10 @@
         </div>
         <br/><br/>
 
-        
+        <div>
+            <button class="btn" type="button" onclick="testMethod1()">js调用OC并传递内容</button>
+        </div>
+        <br/><br/>
         <div>
             <button class="btn" type="button" onclick="testMethod()">js调用OC</button>
         </div>
