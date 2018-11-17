@@ -40,6 +40,14 @@
 		04A20527218D7374004BE9A3 /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A20526218D7374004BE9A3 /* WKWebViewController.m */; };
 		04A2052A218D7C7D004BE9A3 /* LFUIWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A20529218D7C7D004BE9A3 /* LFUIWebViewController.m */; };
 		04C8E6A4219FA14100B21246 /* LFSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C8E6A3219FA14100B21246 /* LFSecondViewController.m */; };
+		04C8E6AB219FA35D00B21246 /* LFUMShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C8E6AA219FA35D00B21246 /* LFUMShareViewController.m */; };
+		04C8E6AF219FA74D00B21246 /* XBUMManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C8E6AE219FA74D00B21246 /* XBUMManager.m */; };
+		04C8E6BC219FBE5700B21246 /* SGActionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C8E6B3219FBE5700B21246 /* SGActionView.m */; };
+		04C8E6BD219FBE5700B21246 /* SGAlertMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C8E6B5219FBE5700B21246 /* SGAlertMenu.m */; };
+		04C8E6BE219FBE5700B21246 /* SGBaseMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C8E6B7219FBE5700B21246 /* SGBaseMenu.m */; };
+		04C8E6BF219FBE5700B21246 /* SGGridMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C8E6B9219FBE5700B21246 /* SGGridMenu.m */; };
+		04C8E6C0219FBE5700B21246 /* SGSheetMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C8E6BB219FBE5700B21246 /* SGSheetMenu.m */; };
+		76D6F3C71B4696CF8417B032 /* libPods-CommonToolDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C47DAEA1C2264B7CF579A3A /* libPods-CommonToolDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -103,6 +111,24 @@
 		04A20529218D7C7D004BE9A3 /* LFUIWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFUIWebViewController.m; sourceTree = "<group>"; };
 		04C8E6A2219FA14100B21246 /* LFSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFSecondViewController.h; sourceTree = "<group>"; };
 		04C8E6A3219FA14100B21246 /* LFSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFSecondViewController.m; sourceTree = "<group>"; };
+		04C8E6A9219FA35D00B21246 /* LFUMShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFUMShareViewController.h; sourceTree = "<group>"; };
+		04C8E6AA219FA35D00B21246 /* LFUMShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFUMShareViewController.m; sourceTree = "<group>"; };
+		04C8E6AD219FA74D00B21246 /* XBUMManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBUMManager.h; sourceTree = "<group>"; };
+		04C8E6AE219FA74D00B21246 /* XBUMManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBUMManager.m; sourceTree = "<group>"; };
+		04C8E6B0219FB91E00B21246 /* CommonToolDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CommonToolDemo.entitlements; sourceTree = "<group>"; };
+		04C8E6B2219FBE5700B21246 /* SGActionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGActionView.h; sourceTree = "<group>"; };
+		04C8E6B3219FBE5700B21246 /* SGActionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGActionView.m; sourceTree = "<group>"; };
+		04C8E6B4219FBE5700B21246 /* SGAlertMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGAlertMenu.h; sourceTree = "<group>"; };
+		04C8E6B5219FBE5700B21246 /* SGAlertMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGAlertMenu.m; sourceTree = "<group>"; };
+		04C8E6B6219FBE5700B21246 /* SGBaseMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGBaseMenu.h; sourceTree = "<group>"; };
+		04C8E6B7219FBE5700B21246 /* SGBaseMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGBaseMenu.m; sourceTree = "<group>"; };
+		04C8E6B8219FBE5700B21246 /* SGGridMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGGridMenu.h; sourceTree = "<group>"; };
+		04C8E6B9219FBE5700B21246 /* SGGridMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGGridMenu.m; sourceTree = "<group>"; };
+		04C8E6BA219FBE5700B21246 /* SGSheetMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGSheetMenu.h; sourceTree = "<group>"; };
+		04C8E6BB219FBE5700B21246 /* SGSheetMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGSheetMenu.m; sourceTree = "<group>"; };
+		150533F86A983AC3D153BD09 /* Pods-CommonToolDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonToolDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CommonToolDemo/Pods-CommonToolDemo.release.xcconfig"; sourceTree = "<group>"; };
+		6C47DAEA1C2264B7CF579A3A /* libPods-CommonToolDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CommonToolDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B06C8333AE1DC981446CC68 /* Pods-CommonToolDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonToolDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CommonToolDemo/Pods-CommonToolDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76D6F3C71B4696CF8417B032 /* libPods-CommonToolDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +181,8 @@
 			children = (
 				048F635B218BF6A200773500 /* CommonToolDemo */,
 				048F635A218BF6A200773500 /* Products */,
+				4BD5E8DCD467482D3C027A4E /* Pods */,
+				38FB234E55BC6CCDDDF4B903 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,6 +197,8 @@
 		048F635B218BF6A200773500 /* CommonToolDemo */ = {
 			isa = PBXGroup;
 			children = (
+				04C8E6B0219FB91E00B21246 /* CommonToolDemo.entitlements */,
+				04C8E6A5219FA33300B21246 /* UMShareDemo */,
 				046791C82195170000461DD7 /* WebViewProgress */,
 				04A2051D218D6ACD004BE9A3 /* OC_VS_JS */,
 				04A20508218D3B01004BE9A3 /* cellShowHtml */,
@@ -342,6 +373,84 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		04C8E6A5219FA33300B21246 /* UMShareDemo */ = {
+			isa = PBXGroup;
+			children = (
+				04C8E6AC219FA74D00B21246 /* UMManager */,
+				04C8E6A6219FA33300B21246 /* Controller */,
+				04C8E6A7219FA33300B21246 /* Model */,
+				04C8E6A8219FA33300B21246 /* View */,
+			);
+			path = UMShareDemo;
+			sourceTree = "<group>";
+		};
+		04C8E6A6219FA33300B21246 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04C8E6A9219FA35D00B21246 /* LFUMShareViewController.h */,
+				04C8E6AA219FA35D00B21246 /* LFUMShareViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04C8E6A7219FA33300B21246 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04C8E6A8219FA33300B21246 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04C8E6B1219FBE5700B21246 /* SGActionView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04C8E6AC219FA74D00B21246 /* UMManager */ = {
+			isa = PBXGroup;
+			children = (
+				04C8E6AD219FA74D00B21246 /* XBUMManager.h */,
+				04C8E6AE219FA74D00B21246 /* XBUMManager.m */,
+			);
+			path = UMManager;
+			sourceTree = "<group>";
+		};
+		04C8E6B1219FBE5700B21246 /* SGActionView */ = {
+			isa = PBXGroup;
+			children = (
+				04C8E6B2219FBE5700B21246 /* SGActionView.h */,
+				04C8E6B3219FBE5700B21246 /* SGActionView.m */,
+				04C8E6B4219FBE5700B21246 /* SGAlertMenu.h */,
+				04C8E6B5219FBE5700B21246 /* SGAlertMenu.m */,
+				04C8E6B6219FBE5700B21246 /* SGBaseMenu.h */,
+				04C8E6B7219FBE5700B21246 /* SGBaseMenu.m */,
+				04C8E6B8219FBE5700B21246 /* SGGridMenu.h */,
+				04C8E6B9219FBE5700B21246 /* SGGridMenu.m */,
+				04C8E6BA219FBE5700B21246 /* SGSheetMenu.h */,
+				04C8E6BB219FBE5700B21246 /* SGSheetMenu.m */,
+			);
+			path = SGActionView;
+			sourceTree = "<group>";
+		};
+		38FB234E55BC6CCDDDF4B903 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C47DAEA1C2264B7CF579A3A /* libPods-CommonToolDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4BD5E8DCD467482D3C027A4E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B06C8333AE1DC981446CC68 /* Pods-CommonToolDemo.debug.xcconfig */,
+				150533F86A983AC3D153BD09 /* Pods-CommonToolDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -349,9 +458,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 048F636F218BF6A400773500 /* Build configuration list for PBXNativeTarget "CommonToolDemo" */;
 			buildPhases = (
+				3D5B106DB907AF2B950A3FA7 /* [CP] Check Pods Manifest.lock */,
 				048F6355218BF6A200773500 /* Sources */,
 				048F6356218BF6A200773500 /* Frameworks */,
 				048F6357218BF6A200773500 /* Resources */,
+				5C7FC2F8FE8F34307CCF5844 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -374,6 +485,11 @@
 				TargetAttributes = {
 					048F6358218BF6A200773500 = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -412,34 +528,80 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3D5B106DB907AF2B950A3FA7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CommonToolDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C7FC2F8FE8F34307CCF5844 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CommonToolDemo/Pods-CommonToolDemo-resources.sh",
+				"${PODS_ROOT}/UMCCommonLog/UMCommonLog/UMCommonLog.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/UMCommonLog.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CommonToolDemo/Pods-CommonToolDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		048F6355218BF6A200773500 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04C8E6BC219FBE5700B21246 /* SGActionView.m in Sources */,
 				046791CE2195177500461DD7 /* UIWebView+DKProgress.m in Sources */,
+				04C8E6C0219FBE5700B21246 /* SGSheetMenu.m in Sources */,
 				048F6382218C1A2300773500 /* LFBottomAlertView.m in Sources */,
 				048F637E218C19C700773500 /* LFCenterAlertView.m in Sources */,
 				048F6361218BF6A200773500 /* ViewController.m in Sources */,
 				04A20517218D3C9F004BE9A3 /* LFUIWebViewShowHtmlCell.m in Sources */,
+				04C8E6AB219FA35D00B21246 /* LFUMShareViewController.m in Sources */,
 				046791CF2195177500461DD7 /* DKProgressLayer.m in Sources */,
 				04C8E6A4219FA14100B21246 /* LFSecondViewController.m in Sources */,
 				04A2051C218D4753004BE9A3 /* LFWKWebViewShowHtmlCell.m in Sources */,
 				046791D52195180700461DD7 /* LFUIWebViewProgressController.m in Sources */,
+				04C8E6BD219FBE5700B21246 /* SGAlertMenu.m in Sources */,
 				046791D92195194700461DD7 /* LFWkWebViewProgressController.m in Sources */,
 				04A20503218D3139004BE9A3 /* LFCountyModel.m in Sources */,
 				048F636C218BF6A400773500 /* main.m in Sources */,
 				04A2050E218D3B3C004BE9A3 /* LFCellShowHtmlViewController.m in Sources */,
 				04A204F8218D2424004BE9A3 /* LFTwoLinePickView.m in Sources */,
+				04C8E6BE219FBE5700B21246 /* SGBaseMenu.m in Sources */,
 				048F635E218BF6A200773500 /* AppDelegate.m in Sources */,
 				04A20500218D29C0004BE9A3 /* LFCityModel.m in Sources */,
 				04A2052A218D7C7D004BE9A3 /* LFUIWebViewController.m in Sources */,
 				04A20511218D3BEF004BE9A3 /* LFUIWebViewShowViewController.m in Sources */,
+				04C8E6AF219FA74D00B21246 /* XBUMManager.m in Sources */,
 				046791DC21951A9D00461DD7 /* LFLoadWebProgressViewController.m in Sources */,
 				04A204FD218D29B1004BE9A3 /* LFProvenceModel.m in Sources */,
 				04A20507218D3549004BE9A3 /* LFDatePickView.m in Sources */,
 				048F6377218C010C00773500 /* LFAlertViewController.m in Sources */,
 				04A20527218D7374004BE9A3 /* WKWebViewController.m in Sources */,
+				04C8E6BF219FBE5700B21246 /* SGGridMenu.m in Sources */,
 				048F6387218C1E2D00773500 /* LFOneLinePickView.m in Sources */,
 				04A20522218D725F004BE9A3 /* LFOC_VS_JSViewController.m in Sources */,
 				04A20514218D3C07004BE9A3 /* LFWKWebViewShowViewController.m in Sources */,
@@ -582,18 +744,20 @@
 		};
 		048F6370218BF6A400773500 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B06C8333AE1DC981446CC68 /* Pods-CommonToolDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = CommonToolDemo/CommonToolDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GSLUC2NTN3;
+				DEVELOPMENT_TEAM = BZDQ6Z6829;
 				INFOPLIST_FILE = CommonToolDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.minyifang.CommonToolDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mfsrf.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -601,18 +765,20 @@
 		};
 		048F6371218BF6A400773500 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 150533F86A983AC3D153BD09 /* Pods-CommonToolDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = CommonToolDemo/CommonToolDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GSLUC2NTN3;
+				DEVELOPMENT_TEAM = BZDQ6Z6829;
 				INFOPLIST_FILE = CommonToolDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.minyifang.CommonToolDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mfsrf.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};

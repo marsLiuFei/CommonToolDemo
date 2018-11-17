@@ -23,7 +23,7 @@
 @implementation ViewController
 -(NSArray *)titles{
     if (!_titles) {
-        _titles = @[@"弹出框控件",@"UIWebView与WKWebView"];
+        _titles = @[@"弹出框控件",@"UIWebView与WKWebView",@"三方库的使用"];
     }
     return _titles;
 }
@@ -72,9 +72,14 @@
     }
     else if (indexPath.row==1){
         LFSecondViewController *vc = [LFSecondViewController new];
+        vc.type= @"0";
         [self.navigationController pushViewController:vc animated:YES];
     }
-    
+    else if (indexPath.row==2){
+        LFSecondViewController *vc = [LFSecondViewController new];
+        vc.type= @"1";
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
 @end

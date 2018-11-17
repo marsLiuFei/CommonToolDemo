@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CDBC07C03EA86F592B2354434A6AF5E7 /* Pods-CommonToolDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 082EF83D932BAB379F9C0B0C80202A33 /* Pods-CommonToolDemo-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		07AFF96A37542DC7556584D9DD8FAA36 /* SecurityEnvSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SecurityEnvSDK.framework; path = thirdparties/SecurityEnvSDK.framework; sourceTree = "<group>"; };
+		082EF83D932BAB379F9C0B0C80202A33 /* Pods-CommonToolDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CommonToolDemo-dummy.m"; sourceTree = "<group>"; };
+		0BFC57FFD947DD9AECD66903E45CA336 /* UMCommonLog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UMCommonLog.framework; path = UMCommonLog/UMCommonLog.framework; sourceTree = "<group>"; };
+		0DD331C005C1D1F593B2353C8230CEC1 /* UMSocialWechatHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMSocialWechatHandler.h; path = UMShare/SocialLibraries/WeChat/UMSocialWechatHandler.h; sourceTree = "<group>"; };
+		13CB55E513D4CF3AFD627BA0F44A9D2D /* Pods-CommonToolDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CommonToolDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		15FAD2DB9DCD6D339C256227D28E2E00 /* libSocialSina.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libSocialSina.a; path = UMShare/SocialLibraries/Sina/libSocialSina.a; sourceTree = "<group>"; };
+		1FC491BBB66842F9C109AE3E44B8E9A7 /* UMCommonLog.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = UMCommonLog.bundle; path = UMCommonLog/UMCommonLog.bundle; sourceTree = "<group>"; };
+		511AA56AE87BB3BBE79A7AE5E5D68E98 /* libSocialQQ.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libSocialQQ.a; path = UMShare/SocialLibraries/QQ/libSocialQQ.a; sourceTree = "<group>"; };
+		798163ED83AA94F24618FFF1F869486D /* UMPush.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMPush.framework; sourceTree = "<group>"; };
+		7F66A2B6F5D22BAB959211D9286D4FC6 /* Pods-CommonToolDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CommonToolDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		8249C0276AA602058EFB8A76E713BBCF /* UTDID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UTDID.framework; path = thirdparties/UTDID.framework; sourceTree = "<group>"; };
+		9035BEED7603A652EDE9DF17C62FB30C /* UMSocialSinaHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMSocialSinaHandler.h; path = UMShare/SocialLibraries/Sina/UMSocialSinaHandler.h; sourceTree = "<group>"; };
+		92DD4B40E9D5B6A7DBC5B52E2E1A64F7 /* UMAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMAnalytics.framework; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9922410F64C82BB6B6684D7AA222839A /* Pods-CommonToolDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CommonToolDemo.release.xcconfig"; sourceTree = "<group>"; };
+		AACABC04B5812816041821CE08C5400D /* UMSocialQQHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMSocialQQHandler.h; path = UMShare/SocialLibraries/QQ/UMSocialQQHandler.h; sourceTree = "<group>"; };
+		B0C3A14E5F100EE5085336E64637062F /* UMCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMCommon.framework; sourceTree = "<group>"; };
+		C017F13EC1D0665BAB6E11CE709E2083 /* Pods-CommonToolDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CommonToolDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CEDC583C29AE9BDB555DC371FF143624 /* libPods-CommonToolDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-CommonToolDemo.a"; path = "libPods-CommonToolDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D510DA76B088B6C3DE958DC0A050CACF /* UMShare.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UMShare.framework; path = UMShare/UMShare.framework; sourceTree = "<group>"; };
+		D9587F801BB225AA0C62B4892B8EC64E /* libSocialWeChat.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libSocialWeChat.a; path = UMShare/SocialLibraries/WeChat/libSocialWeChat.a; sourceTree = "<group>"; };
+		E81AA778A44B27CB559DECDA201E058A /* Pods-CommonToolDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CommonToolDemo-resources.sh"; sourceTree = "<group>"; };
+		F0327DF06DA72C53CAB9319F76FE0606 /* Pods-CommonToolDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CommonToolDemo-frameworks.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F29DF206D101126442E2AF4E22680F4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0BF9F1C6A2F1E8234E21FE08B01DA4D0 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B97F050772F6EC1F61895FCDABB55C1E /* Pods-CommonToolDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		10E62044F8B72F5F06C7A703EFE55E49 /* ReducedWeChat */ = {
+			isa = PBXGroup;
+			children = (
+				0DD331C005C1D1F593B2353C8230CEC1 /* UMSocialWechatHandler.h */,
+				A492D096BD17A03B455D8EF96F38F2DF /* Frameworks */,
+			);
+			name = ReducedWeChat;
+			sourceTree = "<group>";
+		};
+		17CF839FA5F28D283E3E783CDCF1A21B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1FC491BBB66842F9C109AE3E44B8E9A7 /* UMCommonLog.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2023CF61FE67C04AC1A114DD7E760D2B /* ReducedQQ */ = {
+			isa = PBXGroup;
+			children = (
+				AACABC04B5812816041821CE08C5400D /* UMSocialQQHandler.h */,
+				E16D0C4BD55C4F4288E8647661B568FC /* Frameworks */,
+			);
+			name = ReducedQQ;
+			sourceTree = "<group>";
+		};
+		20C3B4948D7DD6B233A71AF5CA1DA128 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				798163ED83AA94F24618FFF1F869486D /* UMPush.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		215FB38A3B542B0FE382C44E54702ABC /* UMCCommonLog */ = {
+			isa = PBXGroup;
+			children = (
+				7B15CEA077F5B074213844969BD76005 /* Frameworks */,
+				17CF839FA5F28D283E3E783CDCF1A21B /* Resources */,
+			);
+			name = UMCCommonLog;
+			path = UMCCommonLog;
+			sourceTree = "<group>";
+		};
+		227685DC4A918E497B4A07A335BC0F42 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA40357981053E1635F29EC3DEFD7492 /* UMCAnalytics */,
+				C8274D8B69FD0BEDE9E13DAE32C387C0 /* UMCCommon */,
+				215FB38A3B542B0FE382C44E54702ABC /* UMCCommonLog */,
+				BB853509F8ED5BCB8EBC2AB5532DA952 /* UMCPush */,
+				694C716F8B454CB0478D328C5CAEA98D /* UMCSecurityPlugins */,
+				A7EBB5AD693A4D2A6C0948642DA8E7DD /* UMCShare */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		28D6E1425094F96DAABA6A9690E73D39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				15FAD2DB9DCD6D339C256227D28E2E00 /* libSocialSina.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		373E0F339BDE21EEAE2CC46B61F53704 /* ReducedSina */ = {
+			isa = PBXGroup;
+			children = (
+				9035BEED7603A652EDE9DF17C62FB30C /* UMSocialSinaHandler.h */,
+				28D6E1425094F96DAABA6A9690E73D39 /* Frameworks */,
+			);
+			name = ReducedSina;
+			sourceTree = "<group>";
+		};
+		4540CF40131288525AAE03FE0525E356 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				FF33E4A10D2FA0E6300E7B3EAA7808B3 /* Frameworks */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		694C716F8B454CB0478D328C5CAEA98D /* UMCSecurityPlugins */ = {
+			isa = PBXGroup;
+			children = (
+				7C2B3666CD874FC7E4FA499F5DDEAC33 /* Frameworks */,
+			);
+			name = UMCSecurityPlugins;
+			path = UMCSecurityPlugins;
+			sourceTree = "<group>";
+		};
+		7B15CEA077F5B074213844969BD76005 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0BFC57FFD947DD9AECD66903E45CA336 /* UMCommonLog.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7C2B3666CD874FC7E4FA499F5DDEAC33 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07AFF96A37542DC7556584D9DD8FAA36 /* SecurityEnvSDK.framework */,
+				8249C0276AA602058EFB8A76E713BBCF /* UTDID.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
+				227685DC4A918E497B4A07A335BC0F42 /* Pods */,
+				A17640D781D6A37512AA7A9A472306C7 /* Products */,
+				0BF9F1C6A2F1E8234E21FE08B01DA4D0 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		807F71E67E0D61359D46FAE11144E54C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0C3A14E5F100EE5085336E64637062F /* UMCommon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A17640D781D6A37512AA7A9A472306C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC583C29AE9BDB555DC371FF143624 /* libPods-CommonToolDemo.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A492D096BD17A03B455D8EF96F38F2DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9587F801BB225AA0C62B4892B8EC64E /* libSocialWeChat.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A7EBB5AD693A4D2A6C0948642DA8E7DD /* UMCShare */ = {
+			isa = PBXGroup;
+			children = (
+				4540CF40131288525AAE03FE0525E356 /* Core */,
+				E854C1D2BDB910B0CCAF46EF76E1E84B /* Social */,
+			);
+			name = UMCShare;
+			path = UMCShare;
+			sourceTree = "<group>";
+		};
+		B97F050772F6EC1F61895FCDABB55C1E /* Pods-CommonToolDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C017F13EC1D0665BAB6E11CE709E2083 /* Pods-CommonToolDemo-acknowledgements.markdown */,
+				7F66A2B6F5D22BAB959211D9286D4FC6 /* Pods-CommonToolDemo-acknowledgements.plist */,
+				082EF83D932BAB379F9C0B0C80202A33 /* Pods-CommonToolDemo-dummy.m */,
+				F0327DF06DA72C53CAB9319F76FE0606 /* Pods-CommonToolDemo-frameworks.sh */,
+				E81AA778A44B27CB559DECDA201E058A /* Pods-CommonToolDemo-resources.sh */,
+				13CB55E513D4CF3AFD627BA0F44A9D2D /* Pods-CommonToolDemo.debug.xcconfig */,
+				9922410F64C82BB6B6684D7AA222839A /* Pods-CommonToolDemo.release.xcconfig */,
+			);
+			name = "Pods-CommonToolDemo";
+			path = "Target Support Files/Pods-CommonToolDemo";
+			sourceTree = "<group>";
+		};
+		BB853509F8ED5BCB8EBC2AB5532DA952 /* UMCPush */ = {
+			isa = PBXGroup;
+			children = (
+				20C3B4948D7DD6B233A71AF5CA1DA128 /* Frameworks */,
+			);
+			name = UMCPush;
+			path = UMCPush;
+			sourceTree = "<group>";
+		};
+		C8274D8B69FD0BEDE9E13DAE32C387C0 /* UMCCommon */ = {
+			isa = PBXGroup;
+			children = (
+				807F71E67E0D61359D46FAE11144E54C /* Frameworks */,
+			);
+			name = UMCCommon;
+			path = UMCCommon;
+			sourceTree = "<group>";
+		};
+		DC091B71EFDABD761C9E8F6C303E7C16 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92DD4B40E9D5B6A7DBC5B52E2E1A64F7 /* UMAnalytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E16D0C4BD55C4F4288E8647661B568FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				511AA56AE87BB3BBE79A7AE5E5D68E98 /* libSocialQQ.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E854C1D2BDB910B0CCAF46EF76E1E84B /* Social */ = {
+			isa = PBXGroup;
+			children = (
+				2023CF61FE67C04AC1A114DD7E760D2B /* ReducedQQ */,
+				373E0F339BDE21EEAE2CC46B61F53704 /* ReducedSina */,
+				10E62044F8B72F5F06C7A703EFE55E49 /* ReducedWeChat */,
+			);
+			name = Social;
+			sourceTree = "<group>";
+		};
+		EA40357981053E1635F29EC3DEFD7492 /* UMCAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				DC091B71EFDABD761C9E8F6C303E7C16 /* Frameworks */,
+			);
+			name = UMCAnalytics;
+			path = UMCAnalytics;
+			sourceTree = "<group>";
+		};
+		FF33E4A10D2FA0E6300E7B3EAA7808B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D510DA76B088B6C3DE958DC0A050CACF /* UMShare.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		31A5111DCF1820D7CA875A67F176DDC9 /* Pods-CommonToolDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2793780A5DF51775EE9A765C8E9527A /* Build configuration list for PBXNativeTarget "Pods-CommonToolDemo" */;
+			buildPhases = (
+				425803DB0435B8CF00F311D5D91DC1FB /* Sources */,
+				F29DF206D101126442E2AF4E22680F4A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-CommonToolDemo";
+			productName = "Pods-CommonToolDemo";
+			productReference = CEDC583C29AE9BDB555DC371FF143624 /* libPods-CommonToolDemo.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = A17640D781D6A37512AA7A9A472306C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				31A5111DCF1820D7CA875A67F176DDC9 /* Pods-CommonToolDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		425803DB0435B8CF00F311D5D91DC1FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDBC07C03EA86F592B2354434A6AF5E7 /* Pods-CommonToolDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		063691B02076C173DEE56EA9C4CD1E42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9922410F64C82BB6B6684D7AA222839A /* Pods-CommonToolDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1EE19F5DD95931924296F637BF18BD8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		67A97A40D54FFE3FFB525B9553010D40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13CB55E513D4CF3AFD627BA0F44A9D2D /* Pods-CommonToolDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F4568DEE257655D290C2B9CEAB37C934 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EE19F5DD95931924296F637BF18BD8F /* Debug */,
+				F4568DEE257655D290C2B9CEAB37C934 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2793780A5DF51775EE9A765C8E9527A /* Build configuration list for PBXNativeTarget "Pods-CommonToolDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67A97A40D54FFE3FFB525B9553010D40 /* Debug */,
+				063691B02076C173DEE56EA9C4CD1E42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
