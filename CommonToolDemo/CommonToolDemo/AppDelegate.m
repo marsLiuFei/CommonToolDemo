@@ -59,20 +59,6 @@
     [UMessage setAutoAlert:NO];
     if([[[UIDevice currentDevice] systemVersion]intValue] < 10){
         [UMessage didReceiveRemoteNotification:userInfo];
-        
-        //    self.userInfo = userInfo;
-        //    //定制自定的的弹出框
-        //    if([UIApplication sharedApplication].applicationState == UIApplicationStateActive)
-        //    {
-        //        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"标题"
-        //                                                            message:@"Test On ApplicationStateActive"
-        //                                                           delegate:self
-        //                                                  cancelButtonTitle:@"确定"
-        //                                                  otherButtonTitles:nil];
-        //
-        //        [alertView show];
-        //
-        //    }
         completionHandler(UIBackgroundFetchResultNewData);
     }
 }

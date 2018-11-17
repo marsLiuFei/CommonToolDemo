@@ -71,11 +71,6 @@
         [self shareViewBtnWithTitle:@"分享的标题" ShareContent:@"对你有帮助的话，走一波关注，star一下" SharePic:@"https://upload.jianshu.io/users/upload_avatars/3363476/30dff947-8f0f-4a91-998e-e38d8a8fdf5e.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/240/h/240" URL:@"https://www.jianshu.com/u/2af7a3f33fc8"];
     }
 }
-
-
-
-
-
 //分享按钮被点击
 - (void )shareViewBtnWithTitle:(NSString *)Title ShareContent:(NSString *)ShareContent SharePic:(NSString *)SharePic URL:(NSString *)URL{
     __weak typeof(self )wself = self;
@@ -93,7 +88,6 @@
                                          [wself shareTextToPlatformType:UMSocialPlatformType_WechatSession Title:Title ShareContent:ShareContent SharePic:SharePic URL:URL];
                                      }
                                      break;
-                                     
                                   case 2:
                                   if ([[UMSocialManager defaultManager] isInstall:UMSocialPlatformType_QQ]) {
                                       [wself shareTextToPlatformType:UMSocialPlatformType_QQ Title:Title ShareContent:ShareContent SharePic:SharePic URL:URL];
@@ -114,14 +108,11 @@
                                           [wself shareTextToPlatformType:UMSocialPlatformType_Sina Title:Title ShareContent:ShareContent SharePic:SharePic URL:URL];
                                       }
                                   break;
-                                     
                                  default:
                                      break;
                              }
                          }];
 }
-
-
 #pragma mark - share type
 //分享文本
 - (void)shareTextToPlatformType:(UMSocialPlatformType)platformType Title:(NSString *)Title ShareContent:(NSString *)ShareContent SharePic:(NSString *)SharePic URL:(NSString *)URL

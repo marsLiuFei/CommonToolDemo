@@ -22,5 +22,4 @@
 
 @interface XBUMManager : NSObject
 +(void)initUmManagerWithLaunchOptions:(NSDictionary *)launchOptions Delegate:(id)delegate;
-
 @end
