@@ -1,34 +1,35 @@
 //
-//  ViewController.m
+//  LFSecondViewController.m
 //  CommonToolDemo
 //
-//  Created by 刘飞 on 2018/11/2.
+//  Created by 刘飞 on 2018/11/17.
 //  Copyright © 2018年 ahxb. All rights reserved.
 //
 
-#import "ViewController.h"
-#import "LFAlertViewController.h"
 #import "LFSecondViewController.h"
-
-@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
-@property(nonatomic, strong)UITableView *tableView;
-@property(nonatomic, copy)NSArray *titles;
-@end
+#import "LFCellShowHtmlViewController.h"
+#import "LFOC_VS_JSViewController.h"
+#import "LFLoadWebProgressViewController.h"
 
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
 #define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
 #define NAV_HEIGHT [[UIApplication sharedApplication] statusBarFrame].size.height + self.navigationController.navigationBar.frame.size.height
+@interface LFSecondViewController ()<UITableViewDelegate,UITableViewDataSource>
+@property(nonatomic, strong)UITableView *tableView;
+@property(nonatomic, copy)NSArray *titles;
 
+@end
 
-@implementation ViewController
+@implementation LFSecondViewController
 -(NSArray *)titles{
     if (!_titles) {
-        _titles = @[@"弹出框控件",@"UIWebView与WKWebView"];
+        _titles = @[@"cell加载html文本",@"OC与JS交互",@"显示网页加载进度"];
     }
     return _titles;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"WebView相关";
     [self initTableView];
 }
 - (void )initTableView{
@@ -41,7 +42,7 @@
     _tableView.dataSource = self;
     [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell1"];
     [self.view addSubview:_tableView];
-
+    
 }
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
@@ -66,18 +67,21 @@
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    if (indexPath.row==0) {
-        LFAlertViewController *vc = [LFAlertViewController new];
+    if (indexPath.row==0){
+        LFCellShowHtmlViewController *vc = [LFCellShowHtmlViewController new];
         [self.navigationController pushViewController:vc animated:YES];
     }
     else if (indexPath.row==1){
-        LFSecondViewController *vc = [LFSecondViewController new];
+        LFOC_VS_JSViewController *vc = [LFOC_VS_JSViewController new];
         [self.navigationController pushViewController:vc animated:YES];
     }
-    
+    else if(indexPath.row==2){
+        LFLoadWebProgressViewController *vc = [LFLoadWebProgressViewController new];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
 @end
 
 
-        
+

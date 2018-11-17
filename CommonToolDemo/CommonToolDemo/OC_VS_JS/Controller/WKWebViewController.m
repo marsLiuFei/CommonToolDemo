@@ -70,7 +70,7 @@
     NSURL *baseURL = [[NSBundle mainBundle] bundleURL];
     [self.wkwebView loadHTMLString:[NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil] baseURL:baseURL];
     
-    //js调OC 
+    //js调OC
     [config.userContentController addScriptMessageHandler:self name:@"showSendMsg"];
     [config.userContentController addScriptMessageHandler:self name:@"showParameterMsg"];
 }

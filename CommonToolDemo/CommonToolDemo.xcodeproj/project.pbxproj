@@ -39,6 +39,7 @@
 		04A20524218D7325004BE9A3 /* demo.html in Resources */ = {isa = PBXBuildFile; fileRef = 04A20523218D7324004BE9A3 /* demo.html */; };
 		04A20527218D7374004BE9A3 /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A20526218D7374004BE9A3 /* WKWebViewController.m */; };
 		04A2052A218D7C7D004BE9A3 /* LFUIWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A20529218D7C7D004BE9A3 /* LFUIWebViewController.m */; };
+		04C8E6A4219FA14100B21246 /* LFSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C8E6A3219FA14100B21246 /* LFSecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +101,8 @@
 		04A20526218D7374004BE9A3 /* WKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewController.m; sourceTree = "<group>"; };
 		04A20528218D7C7D004BE9A3 /* LFUIWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFUIWebViewController.h; sourceTree = "<group>"; };
 		04A20529218D7C7D004BE9A3 /* LFUIWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFUIWebViewController.m; sourceTree = "<group>"; };
+		04C8E6A2219FA14100B21246 /* LFSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFSecondViewController.h; sourceTree = "<group>"; };
+		04C8E6A3219FA14100B21246 /* LFSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFSecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +176,8 @@
 				048F635D218BF6A200773500 /* AppDelegate.m */,
 				048F635F218BF6A200773500 /* ViewController.h */,
 				048F6360218BF6A200773500 /* ViewController.m */,
+				04C8E6A2219FA14100B21246 /* LFSecondViewController.h */,
+				04C8E6A3219FA14100B21246 /* LFSecondViewController.m */,
 				048F6362218BF6A200773500 /* Main.storyboard */,
 				048F6365218BF6A400773500 /* Assets.xcassets */,
 				048F6367218BF6A400773500 /* LaunchScreen.storyboard */,
@@ -418,6 +423,7 @@
 				048F6361218BF6A200773500 /* ViewController.m in Sources */,
 				04A20517218D3C9F004BE9A3 /* LFUIWebViewShowHtmlCell.m in Sources */,
 				046791CF2195177500461DD7 /* DKProgressLayer.m in Sources */,
+				04C8E6A4219FA14100B21246 /* LFSecondViewController.m in Sources */,
 				04A2051C218D4753004BE9A3 /* LFWKWebViewShowHtmlCell.m in Sources */,
 				046791D52195180700461DD7 /* LFUIWebViewProgressController.m in Sources */,
 				046791D92195194700461DD7 /* LFWkWebViewProgressController.m in Sources */,
