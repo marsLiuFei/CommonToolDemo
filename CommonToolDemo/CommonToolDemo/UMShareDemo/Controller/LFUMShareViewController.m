@@ -9,6 +9,7 @@
 #import "LFUMShareViewController.h"
 #import <UMShare/UMShare.h>
 #import "SGActionView.h"
+#import <UMAnalytics/MobClick.h>
 
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
 #define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
@@ -27,6 +28,16 @@
         _titles = @[@"分享"];
     }
     return _titles;
+}
+//友盟统计页面点击次数
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [MobClick beginLogPageView:NSStringFromClass([self class])];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [MobClick endLogPageView:NSStringFromClass([self class])];
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
