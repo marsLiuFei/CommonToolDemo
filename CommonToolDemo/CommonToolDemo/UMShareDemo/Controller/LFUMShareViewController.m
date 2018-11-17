@@ -25,7 +25,7 @@
 
 -(NSArray *)titles{
     if (!_titles) {
-        _titles = @[@"分享"];
+        _titles = @[@"分享、统计、推送"];
     }
     return _titles;
 }
